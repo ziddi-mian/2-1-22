@@ -843,7 +843,6 @@ function lasttWord(f) {
     // object 
   
 
-    
   // program 39
   // Write a JavaScript program to list the properties of a JavaScript object
   // var student = {
@@ -863,3 +862,25 @@ function lasttWord(f) {
     
   }
   properties()
+
+
+  // program 40
+  // Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.
+  // Sample object:
+  // var student = {
+  // name : "David Rayy",
+  // sclass : "VI",
+  // rollno : 12 };
+  
+  function deleteobj() {
+    var student={
+      name:"David Rayy",
+      sclass:"VI",
+      rollno:12,
+    };
+    console.log("Before Deletion",student);
+    delete student.rollno
+    console.log("After Deletion",student);
+    
+  }
+  deleteobj()
